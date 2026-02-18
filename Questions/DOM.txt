@@ -1,0 +1,207 @@
+🟢 BASIC (1–25)
+
+Select an element by ID.
+
+Select elements by class name.
+
+Select elements using querySelector.
+
+Change text of a paragraph.
+
+Change background color of div on button click.
+
+Hide an element when clicked.
+
+Show a hidden element.
+
+Toggle a class on click.
+
+Create a new div and append to body.
+
+Remove an element from DOM.
+
+Change image source dynamically.
+
+Get value from input field.
+
+Clear input field after submit.
+
+Count number of list items.
+
+Change all <li> text to uppercase.
+
+Add class to all paragraphs.
+
+Remove class from element.
+
+Check if element has class.
+
+Replace text of button on click.
+
+Disable button after click.
+
+Enable button again.
+
+Alert text of clicked element.
+
+Change font size using slider input.
+
+Add border to clicked element.
+
+Log tag name of clicked element.
+
+🟡 INTERMEDIATE (26–60)
+
+Add list item dynamically.
+
+Remove last list item.
+
+Remove specific list item when clicked.
+
+Clone element and append.
+
+Insert element before another element.
+
+Insert element after another element.
+
+Replace one element with another.
+
+Swap two elements.
+
+Count total children recursively.
+
+Find deepest nested child.
+
+Detect click outside element.
+
+Create dropdown toggle.
+
+Close dropdown when clicking outside.
+
+Build tab switching system.
+
+Create accordion (one open at time).
+
+Build modal popup.
+
+Close modal using ESC key.
+
+Highlight searched word in paragraph.
+
+Filter list based on search input.
+
+Live character counter.
+
+Limit input characters.
+
+Detect scroll position.
+
+Detect when bottom reached.
+
+Change navbar style on scroll.
+
+Sticky header on scroll.
+
+Detect if element in viewport.
+
+Lazy load images.
+
+Detect double click.
+
+Detect long press.
+
+Drag element with mouse.
+
+Drop element in container.
+
+Reorder list via drag-drop.
+
+Convert NodeList to Array.
+
+Highlight parent when child clicked.
+
+Replace all images with alt text.
+
+🟠 ADVANCED (61–85)
+
+Build infinite scroll loader.
+
+Virtual list rendering.
+
+Custom tooltip following cursor.
+
+Custom context menu.
+
+Disable right click.
+
+Detect element resize.
+
+Observe DOM mutations.
+
+Build custom event system.
+
+Create element from HTML string safely.
+
+Build dynamic form generator.
+
+Validate form fields dynamically.
+
+Build custom select dropdown.
+
+Build autocomplete search.
+
+Highlight active section on scroll.
+
+Build image slider.
+
+Build carousel without library.
+
+Create custom scrollbar indicator.
+
+Detect visibility change of tab.
+
+Sync two scroll containers.
+
+Build keyboard navigation system.
+
+Focus trap inside modal.
+
+Build custom drag selection box.
+
+Build sortable table.
+
+Build expandable tree view.
+
+Implement undo/redo DOM changes.
+
+🔴 EXPERT / FAANG-LEVEL (86–100)
+
+Build virtual DOM diff logic (basic).
+
+Create your own querySelector.
+
+Implement event delegation utility.
+
+Build DOM diff patch updater.
+
+Create mini template engine.
+
+Implement MutationObserver logger.
+
+Build live collaborative DOM editor simulation.
+
+Implement element intersection observer.
+
+Build custom animation engine.
+
+Create accessibility keyboard navigation system.
+
+Implement DOM snapshot comparison tool.
+
+Build mini framework that updates UI on state change.
+
+Implement element position tracker with resize + scroll.
+
+Build dynamic component renderer from JSON schema.
+
+Write function that checks if two DOM trees are structurally identical.
