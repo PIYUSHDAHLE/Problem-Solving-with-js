@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        border: 1px solid salmon;
+      }
+
+      .activeColor {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="btn">Click</button>
+    <button class="btn2">Hide Box</button>
+    <button class="btn3">unhide Box</button>
+    <p class="para"></p>
+    <div class="box"></div>
+    <button class="tbtn">Toggle</button>
+    <div id="divtext">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam nulla iste
+      quas sed laudantium tempora, reprehenderit nostrum aliquid earum soluta
+      similique magnam, libero numquam incidunt labore facilis, animi quam? Qui.
+    </div>
+<section id="sec1">
+ ggggggggggggggggg
+</section>
+
+<img src="" alt="NA">
+<button onclick="imgChange()">Img Change</button>
+<br>
+<img id="heros" src="" alt="hero img">
+<button class="NextHero">Next</button>
+
+
+    <script>
+      // Select an element by ID.
+      const btn = document.getElementById("btn");
+      btn.style.color = "red";
+
+      // Select elements by class name.
+      const btn2 = document.querySelector(".btn2");
+      btn2.style.color = "blue";
+
+      //  Change text of a paragraph.
+      const para = document.querySelector(".para");
+      para.innerText = "OSM";
+      para.textContent = "WOW";
+
+      // Change background color of div on button click.
+      const box = document.querySelector(".box");
+      btn.addEventListener("click", () => {
+        box.style.backgroundColor = "pink";
+      });
+
+      // Hide an element when clicked.
+      btn2.addEventListener("click", () => {
+        box.style.display = "none";
+        // box.style.visibility = "hidden";
+      });
+
+      //Show a hidden element.
+      const btn3 = document.querySelector(".btn3");
+      btn3.addEventListener("click", () => {
+        box.style.display = "block";
+      });
+
+      //Toggle a class on click.
+      const tbtn = document.querySelector(".tbtn");
+      const divtext = document.getElementById("divtext");
+      tbtn.addEventListener("click", () => {
+        divtext.classList.toggle("activeColor");
+      });
+       
+    // Create a new div and append to body.
+      const div = document.createElement("div");
+      div.textContent = "Hi hello dosto";
+      document.body.appendChild(div);
+
+    //   Remove an element from DOM.
+      const sec1 = document.getElementById("sec1");
+      sec1.remove();
+
+    //   Change image source dynamically.
+      const img = document.querySelector('img');
+      img.src = "https://playcontestofchampions.com/wp-content/uploads/2023/04/champion-iron-man.webp"
+      img.style.width = "100px";
+      function imgChange() {
+          img.src ="https://cdn.britannica.com/49/182849-050-4C7FE34F/scene-Iron-Man.jpg"
+          img.style.width = "200px";
+        }
+           
+      //  Change image source dynamically. with multiple img changer 
+const images = [
+  "https://rukminim2.flixcart.com/image/480/640/juk4gi80/poster/e/p/8/large-newposter8463-movie-rise-of-the-planet-of-the-apes-hd-original-imaf5tgkywb3ys9x.jpeg?q=90",
+  "https://bustedhalo.com/wp-content/uploads/2026/01/ironman-3.jpg",
+  "https://variety.com/wp-content/uploads/2015/02/spidey.jpg",
+  "https://images.squarespace-cdn.com/content/v1/5fbc4a62c2150e62cfcb09aa/1621312752468-LNQ5D4XJNMZ0UOCDGEH1/Thor.png"
+];
+
+const heros = document.getElementById("heros");
+const nextHero = document.querySelector(".NextHero");
+
+heros.style.width = "300px";
+heros.style.height = "200px";
+
+let index = 0;
+heros.src = images[index];
+
+nextHero.addEventListener("click", () => {
+  index = (index + 1) % images.length;
+  heros.src = images[index];
+});
+
+
+    </script>
+  </body>
+</html>
