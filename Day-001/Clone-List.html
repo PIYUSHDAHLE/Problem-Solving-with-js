@@ -1,0 +1,33 @@
+<!-- Create a button that, when clicked, clones a list item and appends it to the same list. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <ul id="list">
+        <li>Item list 1</li>
+        <li>Item list 2</li>
+        <li>Item list 3</li>
+    </ul>
+    
+    <button id="btn">Click Me</button>   
+   
+   <script>
+        const btn = document.getElementById("btn");
+        const list = document.getElementById("list");
+
+        btn.addEventListener("click",()=>{
+             const lastItem = list.lastElementChild;  
+             if(lastItem){
+                const clone = lastItem.cloneNode(true);
+                list.appendChild(clone);
+             }
+        })
+    </script>
+</body>
+</html>
